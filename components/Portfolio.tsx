@@ -11,20 +11,20 @@ const galleryItems = [
   },
   {
     src: "/images/gallery-2.jpg",
-    caption: "Construction documentation at Tower Cost Associates",
-    tag: "Project Support",
+    caption: "NIQS (Lagos Chapter) Distinguished Learning Series 2025",
+    tag: "NIQS Lagos chapter meeting",
     position: "object-[center_15%]",
-  },
-  {
-    src: "/images/gallery-cert.jpg",
-    caption: "ALX Africa Virtual Assistant Certification — October 2024",
-    tag: "Certification",
-    position: "object-center",
   },
   {
     src: "/images/gallery-4.jpg",
     caption: "Site visit — material usage monitoring",
     tag: "Field Work",
+    position: "object-center",
+  },
+  {
+    src: "/images/gallery-cert.jpg",
+    caption: "ALX Africa Virtual Assistant Certification — October 2024",
+    tag: "Certification",
     position: "object-center",
   },
 ];
