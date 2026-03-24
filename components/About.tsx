@@ -53,7 +53,7 @@ export default function About() {
               <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden border border-violet/20">
                 <Image
                   src="/images/about-photo.jpg"
-                  alt="Iwudike Precious"
+                  alt="Iwudike Precious" 
                   fill
                   className="object-cover object-[center_40%]"
                   sizes="(max-width: 768px) 120vw, 400px"
@@ -130,7 +130,7 @@ export default function About() {
               {[
                 { label: "Based In", value: "Nigeria" },
                 { label: "Availability", value: "Remote & Hybrid" },
-                { label: "Languages", value: "EN · YO · FR" },
+                { label: "Languages", value: "EN · YO " },
               ].map((fact) => (
                 <div
                   key={fact.label}
