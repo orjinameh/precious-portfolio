@@ -59,7 +59,7 @@ const education = [
 ];
 
 const volunteer = {
-  role: "Course Representative & Departmental Vice President",
+  role: "Class Representative & Departmental Vice President",
   org: "Dept. of Quantity Surveying, FUTO",
   period: "July 2024 – Present",
   bullets: [
@@ -283,4 +283,4 @@ export default function Experience() {
       </div>
     </section>
   );
-}
+} 
