@@ -55,8 +55,8 @@ export default function About() {
                   src="/images/about-photo.jpg"
                   alt="Iwudike Precious"
                   fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 768px) 100vw, 400px"
+                  className="object-cover object-[center_40%]"
+                  sizes="(max-width: 768px) 120vw, 400px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-plum/60 to-transparent" />
               </div>

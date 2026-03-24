@@ -7,21 +7,25 @@ const galleryItems = [
     src: "/images/gallery-1.jpg",
     caption: "On-site inspection during project internship",
     tag: "Field Work",
+    position: "object-[center_20%]",
   },
   {
     src: "/images/gallery-2.jpg",
     caption: "Construction documentation at Tower Cost Associates",
     tag: "Project Support",
+    position: "object-[center_15%]",
   },
   {
     src: "/images/gallery-cert.jpg",
     caption: "ALX Africa Virtual Assistant Certification — October 2024",
     tag: "Certification",
+    position: "object-center",
   },
   {
     src: "/images/gallery-4.jpg",
     caption: "Site visit — material usage monitoring",
     tag: "Field Work",
+    position: "object-center",
   },
 ];
 
@@ -139,7 +143,7 @@ export default function Portfolio() {
                   src={item.src}
                   alt={item.caption}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`object-cover transition-transform duration-500 group-hover:scale-105 ${item.position}`}
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
                 {/* Overlay */}
@@ -178,7 +182,6 @@ export default function Portfolio() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

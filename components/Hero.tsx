@@ -154,11 +154,11 @@ export default function Hero() {
 
             {/* Photo container */}
             <div className="relative w-72 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden glow-violet border border-violet/30">
-              <Image 
-                src="/images/hero-photo.jpeg"
+              <Image
+                src="/images/hero-photo.jpg"
                 alt="Iwudike Precious on-site in safety gear"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_20%]"
                 priority
                 sizes="(max-width: 768px) 288px, 320px"
               />
