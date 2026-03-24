@@ -59,11 +59,17 @@ const education = [
 ];
 
 const volunteer = {
-  role: "Departmental Vice President (Quantity Surveying)",
-  org: "Federal University of Technology, Owerri",
+  role: "Course Representative & Departmental Vice President",
+  org: "Dept. of Quantity Surveying, FUTO",
   period: "July 2024 – Present",
-  description:
-    "Collaborated with the President to organize tutorials for students. Organised orientation programme for 100L students to enable them navigate course registration and academic challenges.",
+  bullets: [
+    "Serve as primary liaison between students and faculty, communicating academic concerns and policy updates to 200+ students.",
+    "Organised orientation programme for 100L students covering course registration, academic expectations, and departmental policies.",
+    "Coordinated peer tutorials and study groups, improving academic performance across the department.",
+    "Managed class schedules, assignment deadlines, and exam timetables — ensuring all students had accurate, up-to-date information.",
+    "Advocated for student welfare by escalating grievances to departmental management and resolving conflicts diplomatically.",
+    "Maintained detailed records of departmental activities, minutes of student-faculty meetings, and attendance registers.",
+  ],
 };
 
 export default function Experience() {
@@ -203,12 +209,18 @@ export default function Experience() {
                       {volunteer.period}
                     </span>
                   </div>
-                  <p
-                    className="text-mist/45 text-sm leading-relaxed"
-                    style={{ fontFamily: "var(--font-dm-sans)" }}
-                  >
-                    {volunteer.description}
-                  </p>
+                  <ul className="space-y-2 mt-3">
+                    {volunteer.bullets.map((b, j) => (
+                      <li
+                        key={j}
+                        className="flex items-start gap-2.5 text-mist/45 text-sm leading-relaxed"
+                        style={{ fontFamily: "var(--font-dm-sans)" }}
+                      >
+                        <span className="mt-1.5 shrink-0 w-1 h-1 rounded-full bg-grape/50" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
